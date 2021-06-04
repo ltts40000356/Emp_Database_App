@@ -1,14 +1,14 @@
 '''
-This is a simple App that does basic CRUD operations on Data stored in a file
+This is a simple App that does basic Create and Search operations on Data stored in a csv file
 This is the main python script that invokes functions in other files
 Coded By: Arunava Bhattacharya
 '''
 import createEmployee
-allowedoptions = (1,2,3,4)
+import searchEmployee
 while True:
     # Getting the options
     print("WELCOME TO EMPLOYEE DATABASE APP\nPlease Select an Option Below")
-    print("1. Create a New Employee\n2. Search for an Employee\n3. Update an Employee\n4. Delete Employee Data")
+    print("1. Create a New Employee\n2. Search for an Employee")
     # Handling exception due to invalid Data type Input
     try:
         option = int(input("\nEnter an Option:"))
@@ -30,10 +30,6 @@ while True:
     elif option == 2:
         # Invoking the Search function. Only Search by Name is possible
         name = input("Enter the Name of Employee to Search:")
-
-    elif option == 3:
-        print("Inside Option 3")
-    elif option == 4:
-        print("Inside Option 4")
+        searchEmployee.searchEmployee(name)
     else:
         print("Sorry Invalid Option choose again")
