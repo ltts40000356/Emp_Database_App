@@ -1,3 +1,5 @@
+This is the Python Mini Project that allows users to create and search for records stored in
+a csv file.
 1. DO NOT Try to Run the Program with the CSV File Open
 2. DO NOT remove the header of the csv manually
 3. DO NOT Tamper with csv file through Excel or any other Application
